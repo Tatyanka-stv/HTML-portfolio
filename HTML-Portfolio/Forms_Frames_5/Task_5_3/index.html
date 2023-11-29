@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini library with styles for data entry elements</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <form class="registration-form">
+        <div class="container">
+            <div class="main_registration_block_1">
+                <!-- Блок 1: Registration Form -->
+                <div class="registration-block-1">
+                    <div class="form-block">
+                        <h2>Registration Form</h2>
+                        <div class="form-row">
+                            <label for="username"><img class="picture" src="./img/username2.png" alt="Username Icon"></label>
+                            <input type="text" id="username" name="username" placeholder="Username" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email"><img src="./img/email2.png" alt="Email Icon"></label>
+                            <input type="email" id="email" name="email" placeholder="Email address">
+                        </div>
+                        <div class="form-row">
+                            <label for="password"><img src="./img/pswd2.png" alt="Password Icon"></label>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 2: Personal Details -->
+                <div class="registration-block-1">
+                    <div class="form-block">
+                        <h2>Personal Details</h2>
+                        <div class="form-row">
+                            <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <select id="gender" name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <input type="date" id="birthdate" name="birthdate" placeholder="mm/dd/yyyy" required>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Блок 3: Підписка -->
+            <div class="registration-block-2">
+                <div class="form-block-2">
+                    <div class="form-row-2">
+                        <p><input class="checkbox" type="checkbox" name="subscribe" value="">
+                        I want to recieve news and special offers</p>
+                    </div>
+                    <div class="form-row-2">
+                        <p><input class="checkbox" type="checkbox" name="agree" value="" required>
+                        I agree with Terms and Conditions</p>
+                    </div>
+                </div>    
+            </div>
+
+            <!-- Блок 4: Кнопка Submit -->
+            <div class="registration-block-2">
+                <div class="form-block-2">
+                    <div class="form-row-3">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </form>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,48 @@
+/* * {
+    margin: auto;
+} */
+.center {
+    text-align: center;
+}   
+body {
+    width: 1000px;
+ }
+p {
+    margin: 0px;
+    width: 100%; 
+}
+.title {
+    font-size: 20px;
+    font-weight: 100;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.formula {
+    background: pink;
+    width: 100px;
+    margin: auto;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+}
+span {
+    color: red;
+}
+.discription {
+    font-size:small;
+    font-family: 'Kanit', sans-serif;
+}
+.formula2 {
+    background: pink;
+    width: 150px;
+    margin: auto;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+}
+
+.formula3 {
+    background: pink;
+    width: 250px;
+    margin: auto;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+}

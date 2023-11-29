@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    min-width: 300px;
+}
+.container {
+    display: flex;
+    min-width: 240px;
+    margin: 30px 30px 30px 30px;
+    padding: 10px;
+    background: rgb(223, 221, 221);
+}
+.container--inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 240px;
+    padding: 10px;
+}
+.card  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-width: 190px;
+    min-height: 330px;
+    margin: 10px;
+    padding: 15px;
+    background: rgb(247, 245, 245);
+    border: 2px solid rgb(195, 195, 195);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #605e5e;
+    transition: all 1s ease; /* Задаем анимацию для всех свойств с длительностью 1 секунда и функцией плавного перехода */
+}
+
+.card:hover {
+    transform: scale(1.1); /* При наведении увеличиваем размер блока в 1.2 раза */
+}
+
+.card-paket1 {
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid rgb(210, 78, 100);
+}
+.card-paket2 {
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid rgb(231, 159, 15);
+}   
+.card-paket3 {
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid rgb(78, 78, 210);
+}
+.card-paket4 {
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid rgb(40, 179, 13);
+}   
+
+.card-price {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    font-size: 11px;
+    line-height: 250%;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    text-align: center;  
+}
+
+.price-dollars {
+    font-size: 30px;
+}
+
+.card-price span {
+    font-size: 12px;
+    color: rgb(165, 163, 163);
+}
+
+.card-cart1 {
+    width: 45%;
+    align-items: center;
+    background-color:  rgb(210, 78, 100);
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+.card-cart1:hover {
+    background-color: rgb(231, 166, 177);
+    color: rgb(210, 78, 100);
+}
+.card-cart2 {
+    width: 45%;
+    align-items: center;
+    background-color:  rgb(231, 159, 15);
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+.card-cart2:hover {
+    background-color: rgb(233, 193, 113);
+    color: rgb(231, 159, 15);
+}
+.card-cart3 {
+    width: 45%;
+    align-items: center;
+    background-color:  rgb(78, 78, 210);
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+.card-cart3:hover {
+    background-color: rgb(145, 145, 209);
+    color: rgb(78, 78, 210);
+}
+
+
+
+
+
+
+.card-cart4 {
+    width: 45%;
+    align-items: center;
+    background-color: rgb(40, 179, 13);
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.card-cart4:hover {
+    background-color: rgb(163, 245, 146);
+    color: rgb(40, 179, 13);
+}
