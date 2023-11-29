@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #dddada;
+    height: 100%;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+}
+/*moving menu*/
+.menu_main {
+    height: 100vh;
+    width: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(110, 106, 106);
+    transition: width 1s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;  
+}
+
+.menu_main a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.menu_main:hover {
+    width: 215px;
+}
+
+.menu_main:hover .menu_item_icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu_main:hover .icon-text {
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.title {
+    padding: 10px 10px 30px 10px;
+    font-family: Arial, Helvetica, "Helvetica Neue",sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.icon-text {
+    opacity: 0;
+    font-family: Arial, Helvetica, "Helvetica Neue",sans-serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+}
+.icon-text:hover {
+   padding-left: 5px;
+}
+
+.icon1-1:hover, .icon2-1:hover, 
+.icon3-1:hover, .icon4-1:hover,
+.icon5-1:hover {
+    background: #504e4e;
+    transition: 0.5s;
+}
+
+.block {
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+/*content*/
+.container_content {
+    margin-left: 100px;
+    padding-top: 60px;
+    word-wrap: break-word;
+}
+
+.content_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.content-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}

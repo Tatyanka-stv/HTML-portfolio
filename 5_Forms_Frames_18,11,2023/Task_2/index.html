@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini library with styles for data entry elements</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div class="container-inner">
+
+            <div class="text">Inputs</div>
+
+            <div class="main-block">
+                <div class="green-tick"></div>
+                <input type="text" class="input" name="input-start" placeholder="Enter some text"/>
+                <input type="text" class="input-valid" name="input-valid" placeholder="valid text"/>
+                <div class="green-tick"></div>
+                <input type="text" class="input-invalid" name="input-invalid" placeholder="invalid text"/>
+                <div class="red-cross"></div>
+            </div>
+
+            <div class="text">Check boxes</div>
+                   
+            <div class="main-block">
+                <label class="checkbox2" for="checkbox2" >
+                    <input class="checkbox2_inp" type="checkbox" id="checkbox2">
+                    <span class="checkbox2_inner">Subscribe</span>
+                </label>
+            </div>
+            
+            <div class="text">Radio buttons</div>
+            <div class="main-block">
+                <div class="radio">Gender:</div>
+                <div class="radio">
+                    <input checked  class="radio_input"  type="radio" name="gender" id="radio_male" value="male">
+                    <label class="radio_label" for="radio_male">Male</label> 
+                </div>
+                <div class="radio">
+                    <input checked  class="radio_input"  type="radio" name="gender" id="radio_female" value="female">
+                    <label class="radio_label" for="radio_female">Female</label> 
+                </div>
+            </div>
+
+            <div class="text">Buttons</div>
+            <div class="main-block">
+                <!-- Зеленая кнопка Active при наведении -->
+                <input type="submit" class="button green" value="Active">
+                 <!-- Красная кнопка Danger при наведении -->
+                 <input type="submit" class="button red" value="Danger">
+                 <!-- Неактивная кнопка  -->
+                 <input  disabled type="submit" class="button disabled" value="Disabled">
+                <!-- Круглая зеленая '+' кнопка с иконкой -->
+                <input type="submit" class="round-button" value="">
+            </div>
+
+            <div class="text">Text area</div>
+            <div class="main-block2">
+                <textarea class="textarea" name="" id=""  placeholder="Enter some text..."></textarea>
+            </div>    
+        </div>
+    </form>  
+</body>
+</html>

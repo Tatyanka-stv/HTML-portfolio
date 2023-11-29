@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    flex-shrink: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.registration-form {
+    width: 85%;
+    min-width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #d8cfcf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.8);
+    border: 2px solid #b9adad;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.main_registration_block_1 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.registration-block-1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 185px;
+    padding: 0px;
+}
+
+.registration-block-2 {
+    width: 100%;
+    height: 80px;
+    padding: 0px;
+}
+.form-block {
+    display: inline-block;
+    min-width: 50%;
+    padding: 5px;
+}
+
+.form-block-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-row {
+    display: inline-flex;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-row-2 {
+    min-width: 100%;
+    padding: 5px 5px;
+    float: left;
+    float: left;
+    font-size: 10px;
+
+}
+.form-row-3 {
+    min-width: 100%;
+    padding-top: 15px;
+    float: right;
+    border-top: 1px solid gray;
+}
+
+.checkbox {
+    width: 15px;
+    margin-left: 15px;
+    padding-left: 5px;
+    border: 1px solid #ccc;   
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid #747070;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    background-color: #d8cfcf;
+}
+
+button {
+    background-color: #0a6367;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    width: 90px;
+}
+
+button:hover {
+   background-color:  #0f99a1;
+}
+
+/* Для экранов шириной 901px и более */
+@media screen and (min-width: 901px) {
+    .registration-form {
+        width: 85%;
+    }
+
+    .main_registration_block_1 {
+        flex-direction: row;
+    }
+
+    .registration-block-1 {
+        width: 50%;
+    }
+
+    .registration-block-2 {
+        width: 100%;
+        height: 55px;
+    }
+
+    .form-block {
+        min-width: 50%;
+    }
+}
+
+/* Для экранов шириной от 601px до 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .registration-form {
+        width: 80%;
+    }
+
+    .main_registration_block_1 {
+        flex-direction: column;
+    }
+
+    .registration-block-1 {
+        width: 100%;
+    }
+
+    .registration-block-2 {
+        width: 100%;
+    }
+
+    .form-block {
+        min-width: 100%;
+    }
+}
+
+/* Для экранов шириной 600px и менее */
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 12px;
+        flex-shrink: 1;
+    }
+    
+    .registration-form {
+        width: 60%;
+    }
+
+    .main_registration_block_1 {
+        flex-direction: column;
+    }
+
+    .registration-block-1 {
+        width: 100%;
+    }
+
+    .registration-block-2 {
+        width: 100%;
+    }
+
+    .form-block {
+        min-width: 100%;
+    }
+
+    input,
+    select {
+        font-size: 10px;
+    }
+}
